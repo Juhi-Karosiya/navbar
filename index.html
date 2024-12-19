@@ -34,7 +34,7 @@
 
         .navbar{
             display: flex;
-            font-size: 20px;
+            font-size: 25px;
             border-bottom: 2px solid #ff99cc;
             box-shadow: 2px 5px 5px 5px #ff99cc ;
             justify-content: space-between;
@@ -55,6 +55,51 @@
 
         .bar{
             color: white;
+        }
+
+        @media (min-width: 860px) and (max-width: 1020px) {
+                .navbar{
+                    display: flex;
+                    font-size: 20px;
+                    border-bottom: 2px solid #ff99cc;
+                    box-shadow: 2px 5px 5px 5px #ff99cc ;
+                    justify-content: space-between;
+                    align-items: center;
+              }
+
+              .main-links{
+                    margin-left: 15px;
+                    margin-right: 50px;
+                }
+
+        }
+
+        @media screen and (max-width: 859px) {
+            .nav{
+                display:none;
+
+            }
+            
+            .main-links{
+                display:none;
+            }
+
+            .bar{
+                color:  #b30059;
+                margin-right: 50px;
+
+            }
+  
+        }
+
+        @media screen and (max-width: 520px) {
+            img{
+                height: 50px;
+            }
+
+            .bar{
+                font-size: 15px;
+            }
         }
 
       
@@ -82,11 +127,13 @@
         </div> 
      
        <div class="links">
-        <a href="#" class="main-links">Home</a>
-        <a href="#" class="main-links">About us</a>
-        <a href="#" class="main-links">Services</a>
-        <a href="#" class="main-links">Contact</a>
+            <a href="#" class="main-links">Home</a>
+            <a href="#" class="main-links">About us</a>
+            <a href="#" class="main-links">Services</a>
+            <a href="#" class="main-links">Contact</a>
+                <i class="fa-solid fa-bars bar"></i>
        </div>
+       
     </div>
 </body>
 </html>
